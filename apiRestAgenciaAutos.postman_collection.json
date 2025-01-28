@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "e5329b9d-213d-46a8-b679-4ea12ae400a8",
+		"name": "apiRestAgenciaAutos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31980901"
+	},
+	"item": [
+		{
+			"name": "peticiones_marcas",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "guardar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "editarID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "peticiones_modelos",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\":2,\r\n        \"nombre\": \"SUZUKI\",\r\n        \"transmission\": \"AUTOMATICO\",\r\n        \"precio\": 23000.0,\r\n        \"existencia\": 100,\r\n        \"marca\": {\r\n            \"id\": 2,\r\n            \"nombre\": \"CAMARO\",\r\n            \"origen\": \"JAPON\",\r\n            \"fechaLanz\": \"1993-02-02\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/ModelosWs/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"ModelosWs",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarModelo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "editarID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
